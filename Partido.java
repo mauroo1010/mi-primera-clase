@@ -26,7 +26,7 @@ public class Partido{
     }
 
     public void setJugadoresJuegaPartido(int numeroRevulsivos){
-        numeroJugadores= numeroJugadores - numeroRevulsivos;
+        numeroJugadores = numeroJugadores - numeroRevulsivos;
     }
 
     public void setCambiarDia(){
@@ -34,21 +34,21 @@ public class Partido{
     }
 
     public void imprimirDetalles(){
-        if(dia = false){
-            System.out.println("Nombre del estadio: " + nombreEstadio + "| Numero de jugadores: " + numeroJugadores + "| dia: si");
+        if(dia == false){
+            System.out.println("Nombre del estadio: " + nombreEstadio + "| Numero de jugadores: " + numeroJugadores + "| Dia: no");
         }
         else{
-            System.out.println("Nombre del estadio: " + nombreEstadio + "| Numero de jugadores: " + numeroJugadores + "| dia: no");
+            System.out.println("Nombre del estadio: " + nombreEstadio + "| Numero de jugadores: " + numeroJugadores + "| Dia: si");
         }
     }
 
     public String getDetalles(){
         String resultado = "";
-        if(dia = false){
-            resultado = "Nombre del estadio: " + nombreEstadio + "| Numero de jugadores: " + numeroJugadores + "| dia: si";
+        if(dia == false){
+            resultado = "Nombre del estadio: " + nombreEstadio + "| Numero de jugadores: " + numeroJugadores + "| Dia: no";
         }
         else{
-            resultado = "Nombre del estadio: " + nombreEstadio + "| Numero de jugadores: " + numeroJugadores + "| dia: no";
+            resultado = "Nombre del estadio: " + nombreEstadio + "| Numero de jugadores: " + numeroJugadores + "| Dia: si";
         }
         return resultado;
     }
